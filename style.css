@@ -1,0 +1,376 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+body {
+         font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+        overflow-x: hidden;
+        transition: filter 0.3s ease-in-out;
+}
+header {
+       background: rgba(51, 51, 51, 0.6); /* Semi-transparent background */
+    color: white;
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px); /* Blurs everything behind the header */
+    -webkit-backdrop-filter: blur(10px); /* Ensures support on Safari */
+    
+}
+.Logo{
+        height: 80px;
+        filter: invert(100%);
+}
+.carousel-container {
+        overflow: hidden;
+        width: 100%;
+        position: relative;
+}
+.carousel {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+}
+.carousel img {
+        width: 100vw;
+}
+
+@media (max-width: 1000px) {
+    .carousel img {
+        width: 120vw; /* Makes the image wider than the screen */
+        object-fit: cover;
+        margin-left: -10vw; /* Pulls the image to the left to crop the sides */
+    }
+}
+
+@media (max-width: 750px) {
+    .carousel img {
+        width: 160vw; /* Even wider for smaller screens */
+        object-fit: cover;
+        margin-left: -30vw; /* Pulls more to the left */
+    }
+}
+@media (max-width: 500px) {
+    .carousel img {
+        width: 180vw; /* Even wider for smaller screens */
+        object-fit: cover;
+        margin-left: -40vw; /* Pulls more to the left */
+    }
+}
+@media (max-width: 450px) {
+    .carousel img {
+        width: 200vw; /* Even wider for smaller screens */
+        object-fit: cover;
+        margin-left: -50vw; /* Pulls more to the left */
+    }
+}
+@media (max-width: 400px) {
+    .carousel img {
+        width: 220vw; /* Even wider for smaller screens */
+        object-fit: cover;
+        margin-left: -60vw; /* Pulls more to the left */
+    }
+}
+
+.main-section {
+        text-align: center;
+}
+.carousel-btn { 
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    background: rgba(0, 0, 0, 0.5); 
+    color: white; 
+    border: none; 
+    padding: 10px 15px; 
+    cursor: pointer; 
+    font-size: 18px; 
+    z-index: 10;
+    opacity: 1; 
+}
+
+.carousel-btn:hover { 
+    background: rgba(0, 0, 0, 0.8); 
+}
+
+.prev {
+        left: 10px;
+}
+.next {
+        right: 10px; 
+}
+.carousel-container {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Same height as the images */
+    overflow: hidden;
+}
+
+
+
+
+
+
+.Info-box {
+        padding: 5%;
+    text-align: justify;
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+    z-index: 10; /* Keeps the map above the blurred content */
+    transform-origin: top left; /* Makes it expand down and right */
+}
+.side-bar{
+        background-color: black;
+        width: 45%;
+        margin: 0;
+        margin-right: 2%;
+        float: right;
+        box-shadow: 5px 5px 10px #5e5e5e;  
+}
+.side-bar2{
+        padding: 5%;
+        width: 45%;
+        height: 1000px;
+        margin: 0;
+        margin-left: 2%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+.Map{
+        border:0px; 
+        width: 80%;
+        height: ;
+        aspect-ratio: 4 / 3;  
+        border-radius: 10px;   
+        box-shadow: 5px 5px 10px #5e5e5e;             
+}
+.plats{
+        margin-top: 10px;
+        margin-bottom: 20px;
+        color: black;
+        font-size: 20px;
+        font-weight: 400;
+}
+.boka{
+        color: white;
+        font-size: 30px;
+        font-weight: 600;
+        text-decoration: none;
+}
+.open-header{
+        margin-top: 50px;
+        color: black;
+        font-size: 20px;
+        font-weight: 600;
+        float: left;
+        width: 100%;
+}
+.open-header2{
+        margin-top: 10px;
+        color: black;
+        font-size: 20px;
+        font-weight: 600;
+        float: left;
+        width: 100%;
+}
+.number{
+        margin-top: 10px;
+        color: black;
+        font-size: 20px;
+        font-weight: 400;
+        float: left;
+        width: 80%;
+}
+
+.open{
+        color: black;
+        font-size: 20px;
+        font-weight: 400;
+        text-align: left;
+        width: 80%;
+}
+.open1{
+        color: black;
+        font-size: 20px;
+        font-weight: 400;
+        text-align: left;
+        margin-top: 20px;
+        width: 80%;
+}
+.open2{
+        color: black;
+        font-size: 20px;
+        font-weight: 200;
+        text-align: left;
+        width: 80%;
+}
+.button{
+        background-color: black;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px #5e5e5e;  
+        text-decoration: none;
+}
+.text1{
+        color: white;
+        font-size: 20px;
+        font-weight: 200;
+}
+.Personal{
+        width: 100%;
+        margin-top: 10%;
+}
+
+.header{
+        color: white;
+        font-size: 60px;
+}
+.line1{
+        color: white;
+        border-radius: 2px;
+        height: 4px;
+        width: 100%;
+        background-color: white;
+        margin-bottom: 10px;
+}
+.line2{
+        color: black;
+        border-radius: 2px;
+        height: 4px;
+        width: 100%;
+        background-color: black;
+        margin-bottom: 10px;
+        margin-top: 55px;
+        border-color: black;
+}
+@media (max-width: 750px) {
+    .side-bar{
+        background-color: black;
+        width: 96%;
+        height: 1000px;
+        margin: 0;
+        margin-left: 2%;
+        margin-right: 2%;
+        }
+}
+@media (max-width: 750px) {
+    .side-bar2{
+        padding: 5%;
+        width: 96%;
+        height: 1000px;
+        margin: 0;
+        margin-left: 2%;
+        margin-right: 2%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+}
+
+
+.footer {
+        background-color: black;
+        width: 100%;
+        margin-top: 300px;
+        display: flex; /* Use flexbox to lay out the items horizontally */
+        justify-content: space-between; /* Distribute items with equal spacing */
+        padding: 20px; /* Add some space around the boxes */
+        box-sizing: border-box; /* Prevent padding from affecting the width */
+        flex-wrap: wrap; /* Allow items to wrap when necessary */
+}
+.fb{
+        width: 10%;
+        filter: invert(100%);
+}
+.fb-text{
+        color: white;  
+        font-size: 20px;
+        font-weight: 400; 
+}
+.instagram{
+        width: 10%;
+        filter: invert(100%);
+}
+.instagram-text{
+        color: white;  
+        font-size: 20px;
+        font-weight: 400; 
+}
+.bd{
+        width: 10%;
+        filter: invert(100%);
+}
+.bd-text{
+        color: white;  
+        font-size: 20px;
+        font-weight: 400; 
+}
+.Link_12 {  
+        margin-bottom: 50px;
+        text-decoration: none;
+}
+
+.Link_1, .Link_12 {
+    width: 30%; /* Ensure the link boxes take up 30% of the width */
+    margin-bottom: 20px; /* Add some margin to the bottom to space the boxes out */
+    text-decoration: none;
+
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    text-align: center; /* Center text */
+    gap: 10px; /* Adds space between image and text */
+}
+.line3 {
+    width: 100%; /* Ensures it spans the full width */
+    margin-top: 20px; /* Adds space between the boxes above */
+    margin-bottom: 0;
+    clear: both;
+    display: block;
+    color: white;
+    border-radius: 2px;
+    height: 4px;
+    background-color: white;
+}
+
+
+@media (max-width: 750px) {
+    .footer {
+        flex-direction: column; /* Stack the boxes vertically when the screen is small */
+        align-items: flex-start; /* Align boxes to the top */
+        gap: 0; /* Remove space between boxes */
+        height: auto; /* Prevent the container from stretching */
+    }
+
+    .Link_1, .Link_12 {
+        width: 100%; /* Make each box full width in the stacked layout */
+        margin-bottom: 20px; /* Ensure spacing between the stacked boxes */
+        text-decoration: none;
+    }
+}
+.logo2 {
+        margin-top: 50px;
+        display: flex; /* Use flexbox to center contents */
+        justify-content: center; /* Horizontally center the image */
+        align-items: center; /* Vertically center the image */
+        height: 100%; /* Ensure the div has a height to center the image vertically */
+        width: 100%; /* Ensure the div has full width (if you want to center within the entire page) */
+}
+.ff-bild{
+        width: 10%;
+        filter: invert(100%);  
+}
+.fl-bild{
+        width: 10%; 
+}
+.gb-bild{
+        width: 20%;
+        filter: invert(100%);  
+}
